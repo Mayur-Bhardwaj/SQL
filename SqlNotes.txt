@@ -1,0 +1,55 @@
+DATABASE : Database is a collection of data in a format that can be easily accessed.
+A software application used to manage our DB is called DBMS.
+
+TYPES :  1. Relational Database               2. Non-Relational Database
+
+1. Relational Database : Data are stored in the form of Tables. Also known as RDBMS. Ex: MySQL, Oracle, PostgreSQL.
+2. Non-Relational Database : Data are stored in the form of Objects. Ex: MongoDB.
+
+SQL: It stands for Structured Query Language. It is used to interact with relational database. In early days SQL name was SEQUEL(Structured English Query Language).It was developed by IBM.
+It is used to perform CRUD Operations:
+1. C : Create
+2. R : Read
+3. U : Update
+4. D : Delete
+
+*  THIS IS NOT CASE SENSITIVE WE WRITE BOTH UPPER CASE AND LOWER CASE
+
+Creating our First Database.
+
+1.  To Create Database write --> CREATE DATABASE DATABASE_NAME; Ex:- CREATE DATABASE COLLEGE;
+2.  To Delete Database write --> DROP DATABASE DATABASE_NAME; Ex:- DROP DATABASE COLLEGE;
+3. USE DATABASE; -->  Which means that which database we use.
+
+CREATE OUR FIRST TABLE:
+
+CREATE TABLE Table_Name(                                   Ex: --> CREATE TABLE student(                       
+    column_name1 datatype constraint,                                id INT PRIMARY KEY,  
+    column_name2 datatype constraint,                                name VARCHAR(50),
+    column_name3 datatype constraint,                                age INT NOT NULL
+);                                                                   );
+
+For Insert Data into the table:
+
+INSERT INTO Table_Name VALUES(ID, NAME, AGE)                Ex: --> INSERT INTO student VALUES(1,"AMAN", 22);
+                                                            Ex: --> INSERT INTO student VALUES(2,"ROHAN", 24);
+   
+For Print The Whole Table We Use:
+
+SELECT * FROM Table_Name;                                    Ex: SELECT * FROM student;
+
+DATATYPES:
+
+1. CHAR    --> To Print the name of a person, City/Country name.Length is 256 character or (0-255).There is a fixed length. If the string length is less than the given size then they take whole memory space. Ex: --> CHAR(50)
+2. VARCHAR --> To Print the String is similar to the CHAR, the difference is thay take only space that the string take extra space give to the other string. Length is 256 character or (0-255). Mostly Preferred used it. Ex: -->VARCHAR(50)
+3. BLOB    --> They are used to store the large string. Length is 65536 character or (0-65535). Ex: -->BLOB(1000).
+4. INT     --> To store the integer values we use it. Length is (-2,147,483,648 to 2,147,463,647). Ex: --> INT.
+5. FLOAT   --> To store the decimal values we use it with precision to 23 digit. Ex: --> FLOAT.
+6. DOUBLE  --> To store the decimal values with 24 to 53 digits. Ex : --> DOUBLE.
+7. BOOLEAN --> To store the boolean values 0 or 1. To store the Boolean value we use TinyInt. Ex: --> BOOLEAN.
+8. DATE    --> To store the date format of YYYY-MM-DD ranging from 1000-01-01 to 9999-12-31. Ex: --> DATE.
+9. YEAR    --> Year in 4 digits format ranging from 1901 to 2155. Ex: --> YEAR.
+
+SIGNED AND UNSIGNED DATATYPES: 
+1. SIGNED DATATYPES : They store the values of positive snd negative values. TINYINT (-128 TO 127).
+2. UNSIGNED DATATYPES: Where we know that our value will be come positive where we use unsigned. Ex: --> Age, Salary. TINYINT UNSIGNED(0 TO 255)
