@@ -1,0 +1,57 @@
+Create   -->To define table schema(designor column)             Ex:-->
+
+CREATE TABLE Table_Name(                        CREATE TABLE student(
+    column_name1 datatype constraint,               rollno INT PRIMARY KEY,
+    column_name2 datatype constraint,               name VARCHAR(50),
+);                                                  );
+
+PRIMARY KEY --> 1. It is always notnull.        2. It is always unique.
+
+To Select and View all Columns -->               SELECT * FROM Table_Name;
+
+SELECT --> It is DQL Command.
+* --> It means "ALL", select all rows and all columns from the table.
+
+To add the data into the Table we use "INSERT".
+
+SYNTAX -->
+
+INSERT INTO Table_Name(column_name1, column_name2)
+VALUES
+(col_v1, col2_v1),
+(col_v2, col2_v2);
+
+INSERT INTO student
+(rollno, name)
+ VALUES
+ (101, "MAYUR"),
+ (102, "DEEPAK");
+
+ To INSERT single data we write like this -->
+
+ INSERT INTO student                or When we know the order and the type INSERT INTO student VALUES (104,"SHYAM");
+ (rollno, name)
+ VALUES
+ (104, "SHYAM");
+
+ PRACTICE QUESTION
+ 1. Create a db for your company XYZ.
+ 2. a. Create a table inside db to store employees info id, name and salary.
+    b. Add following info.   A. "adam", 25000  B. "bob", 30000  C. "casey", 40000
+    c. Select & view all your table data.
+
+ Solution -->
+
+ 1. CREATE DATABASE xyz;
+ 2. a. CREATE TABLE employees(              b. INSERT INTO employees
+    id INT PRIMARY KEY,                        (id, name, salary)
+    name VARCHAR(50),                           VALUES
+    salary INT                                  (1, "adam",25000),
+                                                (2, "bob", 30000),
+                                                (3, "casey",40000);
+ );
+3. To check the data ->
+SELECT * FROM employees;
+
+ Note --> Table Name should be always written in the small case. It is case-sensitive.
+
