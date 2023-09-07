@@ -1,0 +1,21 @@
+1.DDL: It stands for DATA DEFINITION LANGUAGE. In this we can create database, table or delete the table, etc. Commands are create, alter, rename, truncate & drop.
+
+2.DQL : It stands for DATA QUERY LANGUAGE. To see the data we use this. Commands are select.
+
+3. DML: It stands for DATA MANIPULATION LANGUAGE. To chnage the rows inside the table we use the commands like insert, update or delete the table.
+
+4. DCL : It stands for DATA CONTROL LANGUAGE. This command work is to give the permission. Commands are grant & revoke permission to users. Ex: college database,Two table are fees and student marks. The account team have the access of fees & collegeteacher have the access of student marks.
+
+5.TCL: It stands for TRANSACTION CONTROL LANGUAGE. Commands are start transaction, commit, rollback, etc. They are come in advance DBMS.
+
+
+DATABASE RELATED QUERIES:
+
+1. CREATE DATABASE db_name;                         Ex:  CREATE DATABASE IF NOT EXISTS college;    
+or   CREATE DATABASE IF NOT EXISTS db_name;
+
+2. DROP DATABASE db_name;           
+OR DROP DATABASE IF EXISTS db_name;
+
+3. SHOW DATABASES;  --> To show all the databases.
+4. SHOW TABLES;  --> To show all the tables.
